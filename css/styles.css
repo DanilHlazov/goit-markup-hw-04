@@ -30,6 +30,9 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+.hero {
+  background-image: url(../images/team-work.jpg);
+}
 
 /*Logo*/
 .logo {
@@ -62,6 +65,14 @@
 }
 .header {
   border-bottom: 1px solid #ececec;
+}
+.link-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.link:hover {
+  fill: var(--accent-color);
 }
 /* Main-nav */
 
@@ -172,7 +183,7 @@
 
 .hero-title {
   color: #ffffff;
-  background-color: #2f303a;
+  background: rgba(47, 48, 58, 0.01);
 
   margin-top: 0;
   margin-bottom: 30px;
@@ -223,6 +234,10 @@
   letter-spacing: 0.03em;
   margin-top: 10px;
   margin-bottom: 0;
+}
+.list-icon {
+  width: 70px;
+  height: 70px;
 }
 
 /* Team */
@@ -302,6 +317,39 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+/* Clients-block */
+
+.clients-block {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.clients {
+  color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.clients-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  justify-content: space-between;
+}
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 170px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 /*Footer*/
 

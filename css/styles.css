@@ -68,7 +68,8 @@
   height: 12px;
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
   fill: var(--accent-color);
 }
 /* Main-nav */
@@ -197,7 +198,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../images/team-work.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/team-work.jpg);
 }
 .hero h1 {
   padding-top: 200px;
@@ -344,8 +350,9 @@ img {
   margin-right: 30px;
   background-color: var(--primary-white-color);
 }
-.sociallink-list .item {
-  margin-right: 0;
+.sociallink-list.item + .item {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .img-social {
   display: flex;
@@ -358,7 +365,8 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.img-social:hover {
+.img-social:hover,
+.img-social:focus {
   background-color: var(--accent-color);
 }
 .sociallink-icon:hover {
@@ -414,15 +422,32 @@ img {
   height: 90px;
   border-radius: 4px;
 }
-.client:hover {
-  color: var(--accent-color);
+.item:hover .img-client {
+  cursor: pointer;
+  fill: var(--accent-color);
 }
+.clients-list .item:hover {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+.clients-list a:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-list .item:hover {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+
+.client:focus .img-client {
+  fill: var(--accent-color);
+}
+
 .img-client {
   fill: #afb1b8;
 }
-.img-client:hover {
-  fill: var(--accent-color);
-}
+
 /*Footer*/
 
 .footer-area {
@@ -433,10 +458,6 @@ img {
 .footer-background {
   display: flex;
   align-items: baseline;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 15px;
   text-align: left;
 }
 .footer-contacts {
@@ -526,7 +547,8 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socialfooter:hover {
+.socialfooter:hover,
+.socialfooter:focus {
   background-color: var(--accent-color);
 }
 .socialfooter-icon {
@@ -675,6 +697,10 @@ img {
 }
 .flex-element:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.tumb {
+  position: relative;
+  overflow: hidden;
 }
 /*Цвет основного текста #212121 */
 /*В торичный цвет текста #757575 */

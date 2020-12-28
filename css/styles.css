@@ -691,17 +691,13 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 }
-.card-thumb {
-  position: relative;
-  overflow: hidden;
-}
+
 .flex-element:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.tumb {
   position: relative;
   overflow: hidden;
 }
+
 /*Цвет основного текста #212121 */
 /*В торичный цвет текста #757575 */
 /*Белый  #000000 */

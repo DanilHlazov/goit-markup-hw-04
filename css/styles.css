@@ -373,15 +373,17 @@ img {
 .img-social:hover,
 .img-social:focus {
   background-color: var(--accent-color);
-}
-.sociallink-icon:hover {
   fill: var(--primary-white-color);
 }
+/* .sociallink-icon:hover,
+.sociallink-icon:focus {
+  fill: var(--primary-white-color);
+} */
 
 .img-social:hover .sociallink-icon {
   fill: var(--primary-white-color);
 }
-.img-social .sociallink-icon:focus {
+.img-social:focus .sociallink-icon {
   fill: var(--primary-white-color);
 }
 
